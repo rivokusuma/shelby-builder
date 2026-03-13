@@ -1,0 +1,4 @@
+node:
+  name: shelby-node
+  network: testnet
+  rpc_port: 8545
