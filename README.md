@@ -165,6 +165,14 @@ If you would like to improve this repository, feel free to open a pull request o
 
 ---
 
+## Community Contribution
+
+This repository was created to help developers explore and experiment with the Shelby ecosystem.
+
+Community members are welcome to improve scripts, documentation, or deployment strategies.
+
+---
+
 ## License
 
 MIT License
