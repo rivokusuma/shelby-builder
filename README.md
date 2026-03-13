@@ -87,6 +87,28 @@ docker ps
 
 ---
 
+## Using Makefile
+
+You can also run common commands using Make.
+
+Install dependencies
+
+make install
+
+Start the node
+
+make start
+
+Stop the node
+
+make stop
+
+Check running containers
+
+make status
+
+---
+
 ## Configuration
 
 You can configure the node by editing:
