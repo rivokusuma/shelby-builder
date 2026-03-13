@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  shelby-node:
+    image: ubuntu:22.04
+    container_name: shelby-node
+    command: sleep infinity
