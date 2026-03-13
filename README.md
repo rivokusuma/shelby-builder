@@ -1,38 +1,144 @@
 # shelby-builder
-Quickstart builder for Shelby network
 
-This repository provides a simple quickstart template for running a Shelby node.
+A quickstart template for running a Shelby node using Docker.
+
+This repository provides scripts and configuration to help developers easily deploy and experiment with a Shelby node.
+
+---
+
+## Overview
+
+Shelby Builder is a simple infrastructure template designed for developers who want to quickly set up and run a Shelby node environment.
+
+It includes deployment scripts, configuration templates, and Docker setup to simplify the development process.
+
+---
 
 ## Features
 
-* Simple installation
-* Docker based deployment
-* Beginner friendly setup
+* Simple Shelby node deployment
+* Docker-based environment
+* Easy configuration
+* Beginner-friendly setup
+* Modular project structure
+
+---
+
+## Architecture
+
+Developer
+│
+▼
+Shelby Builder Scripts
+│
+▼
+Docker Container
+│
+▼
+Shelby Node
+│
+▼
+Shelby Network
+
+This architecture allows developers to run and manage Shelby node environments in a reproducible way.
+
+---
+
+## Requirements
+
+Before starting, make sure the following tools are installed:
+
+* Docker
+* Git
+* Linux environment (or VPS)
+* Basic terminal knowledge
+
+---
 
 ## Installation
 
 Clone the repository
 
-git clone https://github.com/YOURUSERNAME/shelby-node-quickstart.git
+git clone https://github.com/rivokusuma/shelby-builder.git
 
-Enter the directory
+Enter the project directory
 
-cd shelby-node-quickstart
+cd shelby-builder
 
 Install dependencies
 
 bash scripts/install.sh
 
-Run the node
+---
+
+## Running the Node
+
+Start the Shelby node container
 
 bash scripts/run-node.sh
 
+Verify that the container is running
+
+docker ps
+
+---
+
 ## Configuration
 
-Edit the config file located in:
+You can configure the node by editing:
 
 config/node-config.yaml
 
-## Goal
+Environment variables can also be modified in:
 
-This repository helps developers quickly experiment with the Shelby ecosystem.
+.env.example
+
+Example configuration:
+
+NODE_NAME=shelby-node
+NETWORK=testnet
+RPC_PORT=8545
+
+---
+
+## Repository Structure
+
+shelby-builder
+├── docker-compose.yml
+├── .env.example
+├── scripts
+│   ├── install.sh
+│   └── run-node.sh
+├── config
+│   └── node-config.yaml
+├── docs
+│   └── setup.md
+└── README.md
+
+---
+
+## Documentation
+
+Additional setup documentation is available in:
+
+docs/setup.md
+
+---
+
+## Purpose
+
+This repository aims to simplify the process of deploying and experimenting with Shelby nodes for developers exploring the Shelby ecosystem.
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+If you would like to improve this repository, feel free to open a pull request or create an issue.
+
+---
+
+## License
+
+MIT License
