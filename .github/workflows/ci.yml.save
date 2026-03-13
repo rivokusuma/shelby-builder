@@ -1,0 +1,27 @@
+name: Shelby Builder CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List project files
+        run: ls -R
+
+      - name: Check Docker Compose file
+        run: |
+          if [ -f docker-compose.yml ]; then
+            echo "Docker compose file found"
+          else
+            echo "Docker compose file missing"
+            exit 1
+          fi

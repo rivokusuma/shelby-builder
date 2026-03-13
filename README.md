@@ -1,3 +1,7 @@
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rivokusuma/shelby-builder/ci.yml)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+![Web3](https://img.shields.io/badge/web3-builder-purple)
 # shelby-builder
 
 A quickstart template for running a Shelby node using Docker.
